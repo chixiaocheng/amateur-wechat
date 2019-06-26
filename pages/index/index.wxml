@@ -1,3 +1,6 @@
 <!--index.wxml-->
 <view bind="bindSubmit" class="hello_world" wx:if="{{false}}" wx:key>hello world!
-</view>
+</view><cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">程序设计</view>
+</cu-custom>

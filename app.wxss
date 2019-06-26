@@ -1,2 +1,4 @@
 /**app.wxss**/
+@import "utils/colorui/main.wxss";
+@import "utils/colorui/icon.wxss";
 

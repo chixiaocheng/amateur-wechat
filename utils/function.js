@@ -12,10 +12,7 @@ function GET(e) {
         method: 'GET',
         dataType: 'json',
         responseType: 'text',
-        success: function(res) {
-            e.success;
-            console.log(url)//TODO
-        },
+        success: e.success,
         fail: e.fail,
         complete: e.complete
     })

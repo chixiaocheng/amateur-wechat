@@ -1,24 +1,20 @@
 //app.js
+const login = require("pages/public/login.js"); //登录函数
 App({
     // 开发者设置:
     runOnLocal: 1, //是否本地运行
 
-
-
-
     // 全局数据
     globalData: {
         site: 'https://amateur.wx243.com', //服务器
-        ikey: wx.getStorageSync('ikey'), //身份秘钥
+        ikey: (wx.getStorageSync('ikey')) ? wx.getStorageSync('ikey'):'', //身份秘钥
     },
-
 
     // 注册内容
     onLaunch: function() {
-        // 提示等待
-        wx.showLoading({
-            title: 'Loading',
-        })
+        // 验证登录
+        console.log(this.globalData)
+        var a = this.globalData;
 
         // 获取系统状态栏信息（ColorUI需要）
         wx.getSystemInfo({

@@ -11,6 +11,7 @@ Page({
     onLoad: function(options) {
         f.GET({
             model: 'login-wx',
+            act:'register',
             data: '',
             success: (res) => {
                 console.log('sussess', res.data)

@@ -1,7 +1,8 @@
 {
     "pages": [
+        "pages/public/loading/loading",
         "pages/public/index/index",
-        "pages/public/login/login"
+        "pages/public/register/register"
     ],
     "window": {
         "backgroundTextStyle": "light",

@@ -4,7 +4,7 @@ const app = getApp();
 // 自定义GET类型请求
 function GET(e) {
     let module = (e.module) ? e.module : 'index';
-    let url = app.globalData.site + '/' + module + '.php?tt=wechat&m=' + e.model + '&ikey=' + app.globalData.ikey;
+    let url = app.globalData.site + '/' + module + '.php?tt=wechat&m=' + e.model + '&act=' + e.act + '&ikey=' + app.globalData.ikey;
     wx.request({
         url: url,
         data: e.data,

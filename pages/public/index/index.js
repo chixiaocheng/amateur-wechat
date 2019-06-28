@@ -5,7 +5,7 @@ Page({
     data: {},
 
     onLoad: () => {
-        console.log('hello world',);
+        
     },
 
 });

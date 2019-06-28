@@ -1,4 +1,5 @@
-<!--index.wxml-->
+<!--pages/public/loading/loading.wxml-->
+<!-- 登录缓冲页-->
 <cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
   <view slot="backText">返回</view>
   <view slot="content">登录中</view>
